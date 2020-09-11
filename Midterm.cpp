@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
  int n,x,v,A[100];
-void nhapmang(int X[],int &n){
+void NhapMang(int X[],int &n){
 	cout<<"Nhap so phan tu cua mang:";
 	cin>>n;
 	for(int i=0;i<n;i++)
@@ -10,7 +10,7 @@ void nhapmang(int X[],int &n){
 		cin>>X[i];
 	}
 }
-void Inmang(int X[],int n){
+void InMang(int X[],int n){
 	cout<<"Mang chua cac phan tu: ";
 	for(int i=0;i<n;i++){
 		cout<<X[i]<<" ";
@@ -38,20 +38,20 @@ int main()
     cout<<"\nNhap lua chon: ";
     cin>>x;
     switch(x){
-    			case 1:
-    		nhapmang(A,n);
+    	case 1:
+    		NhapMang(A,n);
     		goto begin;
     		break;
-    case 2:
-    		Inmang(A,n);
+    	case 2:
+    		InMang(A,n);
     		goto begin;
     		break;
-		    	case 3:
-		    		Them(A,n);
-		    		goto begin;
-		    		break;
-    default:
-    			cout<<"Nhap sai, moi nhap lai.";
+		  case 3:
+    		Them(A,n);
+    		goto begin;
+    		break;
+    	default:
+    		cout<<"Nhap sai, moi nhap lai.";
     		goto begin;
     		break;
 	}
